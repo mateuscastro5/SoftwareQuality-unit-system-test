@@ -5,7 +5,7 @@
 Centro Universitário Senac-RS  
 Disciplina: Qualidade de Software  
 Professor: Luciano Zanuz  
-**Integrantes:** [Adicione os nomes aqui]
+**Integrantes:** Mateus Fagundes
 
 ---
 
