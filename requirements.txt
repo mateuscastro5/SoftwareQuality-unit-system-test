@@ -1,0 +1,8 @@
+# Este projeto usa Node.js, não Python
+# Para instalar as dependências execute:
+# npm install
+
+# Dependências principais:
+# - express (servidor web)
+# - jest (framework de testes)
+# - selenium-webdriver (automação de testes)

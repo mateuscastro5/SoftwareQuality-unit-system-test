@@ -1,0 +1,8 @@
+node_modules/
+package-lock.json
+test-report.json
+test-results.json
+relatorio-testes.txt
+coverage/
+.env
+*.log

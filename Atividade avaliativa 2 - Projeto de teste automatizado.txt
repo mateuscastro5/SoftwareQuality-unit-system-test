@@ -1,0 +1,46 @@
+﻿Centro Universitário Senac-RS
+ADS - Análise e Desenvolvimento de Sistemas / SPI - Sistemas para Internet
+Unidade Curricular: Qualidade de Software 
+Prof.: Luciano Zanuz 
+	Atividade avaliativa 2 - Projeto de teste automatizado
+Objetivo da atividade
+O objetivo desta tarefa é desenvolver um projeto de testes automatizados, incluindo testes funcionais em nível de sistema e testes unitários.
+Importante: esta tarefa requer o desenvolvimento de scripts de teste automatizado utilizando linguagem de programação, e não a gravação de testes no Selenium IDE.
+Instruções
+A atividade poderá ser realizada de forma individual ou em grupos de até 4 pessoas. Caso a atividade seja realizada em grupo, a entrega deverá ser apenas uma para o grupo todo, mencionando os integrantes do grupo na entrega.
+Entrega
+Data: 14/10.
+Forma de entrega: Código-fonte do projeto de testes automatizados ou dos scripts de teste e evidências da execução dos testes (vídeo, imagens, relatório da execução dos testes automatizados, etc) através das Atividades avaliativas do Blackboard (se a atividade for em grupo, entregar apenas um por grupo e mencionar os integrantes do grupo no documento).
+Preferencialmente, o código-fonte deste atividade deverá ser armazenado em um repositório no Github e a entrega da atividade deverá ser o link para o repositório.
+Exemplo da estrutura de pastas do projeto:
+  
+
+
+
+Atividades
+Desenvolver testes automatizados conforme os seguintes requisitos mínimos:
+* Um ou mais cenários de testes de sistema por integrante do grupo, com três ou mais casos de testes por cenário (caminho feliz, caminhos alternativos, entradas inválidas, etc);
+* Um ou mais cenários de testes unitários por integrante do grupo, com três ou mais casos de testes por cenário (não pode ser uma calculadora ;-) ) (valores válidos, inválidos, extremos, etc);
+* Opcionalmente, poderão ser desenvolvidos testes automatizados para API’s, a escolher, e testes automatizados utilizando BDD, bem como mais cenários e casos de testes.
+A tarefa pode ser realizada de duas formas, a escolher:
+1. Desenvolvimento de uma aplicação web simples e testá-la.
+   1. Desenvolvimento de testes funcionais em nível de sistema para testar a aplicação web desenvolvida;
+   2. Desenvolvimento de testes unitários para testar o código-fonte da aplicação web desenvolvida.
+2. Utilização de uma aplicação web pronta e funcional ou um site demo para prática de testes automatizados.
+   1. Desenvolvimento de testes funcionais em nível de sistema para testar a aplicação web existente;
+   2. Desenvolvimento de testes unitários sobre código-fonte gerado ou obtido, independente da aplicação utilizada para os testes funcionais em nível de sistema.
+Em ambas as formas, devem ser gerados scripts de automação de testes em nível unitário, para testar o código-fonte e testes funcionais em nível de sistema, para testar a aplicação em funcionamento.
+Lista de sites demo para prática de testes funcionais em nível de sistema:
+* https://www.saucedemo.com/
+* https://opensource-demo.orangehrmlive.com/web/index.php/auth/login 
+* https://bugbank.netlify.app/ 
+* https://seubarriga.wcaquino.me/
+* https://demoqa.com/
+* http://automationpratice.com.br/ 
+* http://automationpractice.com/
+* http://the-internet.herokuapp.com/
+* http://uitestingplayground.com/
+* https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login
+* https://www.globalsqa.com/demo-site/
+* https://automationpanda.com/2021/12/29/want-to-practice-test-automation-try-these-demo-sites/
+* https://ultimateqa.com/dummy-automation-websites/

@@ -1,0 +1,23 @@
+{
+  "name": "projeto-testes-automatizados",
+  "version": "1.0.0",
+  "description": "Projeto de testes automatizados - Gerenciador de Produtos",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "jest --verbose && jest --json --outputFile=test-results.json --silent && node generate-report.js",
+    "test:unit": "jest tests/unit --verbose",
+    "test:system": "jest tests/system --verbose --runInBand",
+    "test:coverage": "jest --coverage --verbose"
+  },
+  "keywords": ["testes", "automatizados", "jest", "selenium"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "selenium-webdriver": "^4.15.0"
+  }
+}
