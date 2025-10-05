@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 
-// Lê o resultado dos testes em JSON
 const resultsPath = path.join(__dirname, 'test-results.json');
 
 if (!fs.existsSync(resultsPath)) {
@@ -28,9 +27,12 @@ report += '                    RELATÓRIO DE TESTES AUTOMATIZADOS\n';
 report += '                  Projeto: Sistema de Gerenciamento de Produtos\n';
 report += '═══════════════════════════════════════════════════════════════════\n\n';
 report += `Data/Hora da Execução: ${formatDate()}\n`;
-report += `Tempo Total: ${(results.testResults[0].perfStats.runtime / 1000).toFixed(2)}s\n\n`;
 
-// Resumo Geral
+const totalTime = results.testResults.reduce((sum, suite) => {
+  return sum + (suite.perfStats?.runtime || 0);
+}, 0);
+report += `Tempo Total: ${(totalTime / 1000).toFixed(2)}s\n\n`;
+
 report += '───────────────────────────────────────────────────────────────────\n';
 report += '                           RESUMO GERAL\n';
 report += '───────────────────────────────────────────────────────────────────\n';
@@ -55,7 +57,7 @@ results.testResults.forEach((suite, suiteIndex) => {
   
   report += `\n[${suiteIndex + 1}] ${suiteType}\n`;
   report += `Arquivo: ${suiteName}\n`;
-  report += `Tempo: ${(suite.perfStats.runtime / 1000).toFixed(2)}s\n`;
+  report += `Tempo: ${((suite.perfStats?.runtime || 0) / 1000).toFixed(2)}s\n`;
   report += `Status: ${suite.numFailingTests === 0 ? '✓ APROVADO' : '✗ FALHOU'}\n`;
   report += `Testes: ${suite.numPassingTests}/${suite.numPassingTests + suite.numFailingTests}\n\n`;
 
